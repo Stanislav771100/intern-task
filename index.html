@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+       
+    <script>
+        function lengthArr (str){    
+
+            return(str.replace(/\s+/g,' ').trim())
+
+        }
+        console.log(lengthArr("Alyosha   kaban   "))
+        
+        
+        let radom = Math.floor(Math.random() * 11)
+        console.log (radom)
+
+        let stroka = "ya stroka bez probelov"
+        console.log(stroka.replace(/\s+/g, ","))
+        av = stroka.split(' ')
+        console.log(av.join())
+
+
+        var thirdTaskArray = [
+      {
+        userName: 'alosha',
+        userAge: 14
+      },
+      {
+        userName: 'Stas',
+        userAge: 12
+      },
+      {
+        userName: 'Lyuda',
+        userAge: 121
+      },
+      {
+        userName: 'Dima',
+        userAge: 'ddd'
+        
+      }
+    ]
+    function firstSort (arr) {
+        for (var i = 0; i < arr.length; i++) {
+            
+            if (typeof arr[i].userAge === 'number') {
+                arr.sort(function(a,b){ 
+                 return a.userAge - b.userAge
+                 
+                }) 
+                console.log(arr)
+            }else {
+                console.log('введите число')
+                
+            }
+}
+            return arr
+    }
+    console.log(firstSort(thirdTaskArray))
+
+var morse = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+    function azbuka (word){
+      
+        console.log(word.split('').map((symbol)=>{ 
+           return morse[symbol.charCodeAt() - 97]
+           
+
+        }))
+    }
+    azbuka('volodya')
+        function min (a,b){
+        if (a>b){
+            console.log(a)
+        } else 
+        console.log(b)
+        }
+
+        min(8, 5)
+        let allBracket = [
+        'parenthesis: ()',
+        'brace: {}',
+        'square: []'
+        ]
+            function searchBracket(string){
+                switch (string) {
+             case '()':
+            alert( 'ok' );
+            break
+                case '{}':
+            alert( 'ok' );
+            break
+                case '[]':
+            alert( 'ok' );
+            break
+            default:
+            alert( 'not ok' );
+}
+
+        }
+        searchBracket('[}')
+function getRandomInRange(min, max) {
+  var che = Math.floor(Math.random() * (max - min + 1)) + min;
+  
+}
+
+    console.log(getRandomInRange(1, 10))
+
+</script>
+</body>
+</html>
